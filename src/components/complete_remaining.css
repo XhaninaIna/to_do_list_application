@@ -1,0 +1,36 @@
+.completed {
+  text-decoration: line-through;
+  color: #fff; /* Optional: Change color to indicate completion */
+}
+
+.TodoWrapper {
+  background-color: #282c34; /* Background color */
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 600px;
+  margin: 0 auto;
+  color: white; /* Text color */
+}
+
+.todo-input {
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.todo-btn {
+  padding: 10px;
+  background-color: #61dafb; /* Button color */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.task-counts {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+  color: white;
+  font-size: 1.2em;
+}
