@@ -1,13 +1,22 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-
-const root = ReactDOM.createRoot(document.getElementById('root'));
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import reportWebVitals from "./reportWebVitals";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
+    {/* <App /> */}
+    <BrowserRouter basename="/landing">
+      <Routes>
+        <Route path="/" element={<p>Hello element</p>} />
+        <Route path="/test" element={<p>Test page route</p>} />
+        {/* router dinamik, aksesojme path blog dhe bejme render nje id blog specifik(slug qe eshte dinamike), blog_post_slug */}
+        {/* tn marrim id dhe e bejme fetch */}
+        <Route path="/blog" element={<p>Blog</p>} />
+        <Route path="/blog/:slug" element={<p>Blog post</p>} />
+      </Routes>
+    </BrowserRouter>
   </React.StrictMode>
 );
 

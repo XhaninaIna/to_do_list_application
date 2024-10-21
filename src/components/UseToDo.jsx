@@ -33,7 +33,6 @@ export default function useTodo() {
   );
 
   //create a new item with a unique id and send it to backend
-
   function addTodo(taskTitle) {
     const newTodo = {
       id: uuidv4(),
